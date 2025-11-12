@@ -188,14 +188,14 @@ body{
 
 
 .about h1{
-  color: deepskyblue;
+  color: white;
   text-align: center;
   font-family: "Audiowide", sans-serif;
   text-decoration: underline;
   margin-top: 350px;
   margin-bottom: 0;
   font-size: 2.5em;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
   z-index: 3;
   position: relative;
 }
