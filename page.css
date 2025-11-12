@@ -1,4 +1,6 @@
-
+body{
+  behavior-scroll: smooth;
+}
 
 .links {
   display: flex;
