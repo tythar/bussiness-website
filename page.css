@@ -1,5 +1,6 @@
 body{
   behavior-scroll: smooth;
+  behavior: smooth;
 }
 
 .links {
