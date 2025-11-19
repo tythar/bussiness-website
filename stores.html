@@ -109,7 +109,35 @@
 <p>&copy; 2025 Athahar. All rights reserved.</p>
 </div>
 
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const navLinks = document.querySelectorAll('.links a');
+    const currentPage = window.location.pathname.split('/').pop();
+    
+    navLinks.forEach(link => {
 
+        link.classList.remove('active');
+        
+        const linkPage = link.getAttribute('href');
+        
+        if (linkPage === currentPage) {
+            link.classList.add('active');
+        }
+        
+        link.addEventListener('click', function(e) {
+            
+            if (linkPage.startsWith('#')) {
+                navLinks.forEach(l => l.classList.remove('active'));
+                this.classList.add('active');
+            } else {
+                
+                navLinks.forEach(l => l.classList.remove('active'));
+                this.classList.add('active');
+            }
+        });
+    });
+});
+</script>
 <body>
   
 </body>

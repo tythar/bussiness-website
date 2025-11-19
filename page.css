@@ -1,11 +1,12 @@
 body{
-  behavior-scroll: smooth;
-  behavior: smooth;
-    overflow-x: hidden;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
   width: 100%;
 }
 
 html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 150px;
   overflow-x: hidden;
 }
 
@@ -466,9 +467,9 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   left: 0;
   right: 0;
   background: linear-gradient(transparent, rgba(0,0,0,0));
-  color: white;
+  color: black;
+    font-family: "Audiowide", sans-serif;
   padding: 40px 20px 25px;
-  font-family: "Sofia", sans-serif;
   font-size: 28px;
   text-align: center;
   font-weight: bold;
@@ -536,8 +537,25 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
-.offer h1{
-    font-size: 80px;
+.offers{
+  width: 100%;
+  text-align: center;
+  margin-top: 300px;
+  margin-bottom: 5px;
+  background-color: white;
+  padding: 50px 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12), 
+            0 8px 16px rgba(0, 0, 0, 0.08);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15), 
+              0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.offers h1{
+    font-size: 40px;
   font-family: "Audiowide", sans-serif;
   color: black;
 }
@@ -777,4 +795,5 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   top: 30%;
   left: 50%;
 
+}
 }
