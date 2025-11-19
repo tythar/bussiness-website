@@ -1,6 +1,12 @@
 body{
   behavior-scroll: smooth;
   behavior: smooth;
+    overflow-x: hidden;
+  width: 100%;
+}
+
+html {
+  overflow-x: hidden;
 }
 
 .links {
@@ -171,6 +177,7 @@ body{
   margin-top: 200px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   border-radius: 18px;
+
 }
 
 .div1 p{
@@ -180,7 +187,7 @@ body{
   text-align: center;
 }
 .div1 img{
-  max-width: 600px;
+  max-width: 500px;
   height: auto;
   margin-top: 20px;
   border-radius: 18px;
@@ -241,10 +248,11 @@ main > h1 {
 }
 
 .fform{
-  margin-top: 300px;
-    margin-left: 50px;
+  margin-top: 200px;
+    margin-left: 30px;
     width: 100%;
     overflow: hidden;
+    margin-bottom: 200px;
 }
 
 
@@ -414,7 +422,7 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   object-fit: cover;
 }
 
-/* ======= SLOW AUTO-SCROLL GALLERY WITH 5SEC PAUSE ======= */
+/* SLOW AUTO-SCROLL GALLERY WITH 5SEC PAUSE*/
 .slow-gallery-section {
   width: 100%;
   background: white;
@@ -594,6 +602,7 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   font-size: 24px;
   margin-left: 10px;
   transition: color 0.3s ease;
+  text-decoration: none;
 }
 
 .social-follow a:hover {
@@ -606,4 +615,166 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
 .downs1 a i.fa-tiktok:hover {
   color: #69C9D0; 
+}
+
+@media(max-width:640px){
+  .body{
+    scroll-behavior: smooth;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .links{
+    flex-direction: row;
+    gap: 15px;
+    width: 80%;
+    margin: 20px auto;
+  }
+  .links a{
+    font-size: 16px;
+  }
+
+  .hero-content{
+    top: 60%;
+    left: 30%;
+    white-space: nowrap;
+    font-size: 30px;
+  }
+
+  .hero-image{
+    height: 130%;
+    width: 100%;
+  }
+  .hero{
+    height: 80vh;
+    width: 100%;
+  }
+
+  .div1{
+    flex-direction: column;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 150px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .div1 p{
+  flex: 2;
+  padding: 30px;
+  font-size:25px;
+  text-align: center;
+}
+.div1 img{
+  max-width: 300px;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 18px;
+}
+
+.hero1-content{
+  font-size: 16px;
+  top: 30%;
+  left: 50%;
+}
+
+
+  .fform {
+    margin-top: 100px; 
+    margin-left: 0;    
+    margin-right: 0;   
+    margin-bottom: 100px;
+    width: 100%;
+    padding: 0 15px;   
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .form-container {
+    width: 100%;
+    max-width: 100%;   
+    margin-left: 0;    
+    margin-right: 0;
+    margin-top: 20px;
+    padding: 30px 20px !important;  
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.01);
+     backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(20px);
+  
+  }
+
+  .contact-form h2 {
+    font-size: 1.8em; 
+    margin-bottom: 20px;
+  }
+
+  .form-group label {
+    font-size: 1em;   
+  }
+
+  .submit-btn {
+    padding: 12px 20px; 
+    font-size: 1em;
+  }
+
+  .radio-group {
+    flex-direction: row;
+    gap: 10px;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .div1{
+    flex-direction: column;
+    text-align: center;
+    padding-left: 150px;
+    padding-right: 150px;
+    margin-top: 180px;
+  }
+
+  .div1 p{
+  flex: 2;
+  padding: 50px;
+  font-size:30px;
+  text-align: center;
+}
+
+.links{
+    gap: 20px;
+    width: 85%;
+    margin: 20px auto;
+  }
+
+  .hero-content{
+    top: 50%;
+    left: 30%;
+    white-space: nowrap;
+    font-size: 40px;
+  }
+
+  .div1{
+    display: flex;
+    flex-direction: row;
+    padding: 30px 20px; 
+    margin: 150px 20px 0;
+  }
+
+  .div1 img{
+    max-width: 400px;
+}
+
+.div1 p{
+  font-size: 20px;
+  text-align: left;
+  padding: 20px;
+  margin-left: 10px;
+  padding: 20px;
+}
+
+.hero1-content{
+  font-size: 20px;
+  top: 30%;
+  left: 50%;
+
 }
