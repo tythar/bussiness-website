@@ -644,18 +644,19 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   .links{
     flex-direction: row;
     gap: 15px;
-    width: 80%;
+    width: 100%;
     margin: 20px auto;
+    white-space: nowrap;
   }
   .links a{
-    font-size: 16px;
+    font-size: 10px;
   }
 
   .hero-content{
     top: 60%;
     left: 30%;
     white-space: nowrap;
-    font-size: 30px;
+    font-size: 20px;
   }
 
   .hero-image{
